@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+
+:root {
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    height: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: "Lato", "sans-serif";
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+
+
+p {
+    margin: 10px 0;
+}
+
+
+img {
+    width: 100%;
+}
+/* Footer */
+.footer .social a {
+    margin: 0 10px;
+
+}
+
+.footer img {
+    width: 60%;
+}
+
+
+/* Navbar */
+
+.navbar img {
+    width: 200px; /* width of container */
+    height: 60px; /* height of container */
+    object-fit: cover;
+}
+.navbar {
+    background-color: white;
+    color:white;
+    height: 70px;
+
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li a {
+    color:black;
+    padding: 10px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.navbar li a:hover{
+    border-bottom: 2px black solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar .logo:hover {
+    transition: transform 0.2s ease-in;
+    transform: translateY(-5px);
+}
+
+/* Images */
+.pimg1, .pimg2, .pimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+    /* fixed = parallax 
+        scroll = normal
+    */
+
+    background-attachment: fixed;
+
+
+}
+
+/* Showcase */
+.pimg1 {
+    background-image: url(../images/polytech.jpg);
+    min-height: 100%;
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.showcase p {
+    line-height:1.1em;
+    margin: 20px 0;
+    font-size: 40px;
+
+}
+
+.showcase .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30 px;
+}
+
+.showcase-text {
+    animation: slideInLeft 1s ease;
+}
+
+/* Qui sommes nous */
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+
+}
+
+.cloud .text-center {
+    animation: slideInLeft 2s ease;
+}
+
+
+/* Stats */
+
+.stats {
+    padding-top: 50px;
+    animation: slideInBottom 3.5s ease-in;
+}
+  
+.stats-heading {
+    max-width: 100%;
+    margin: auto;
+}
+  
+.stats h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+}
+
+.stats h3 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+
+.stats .grid p {
+    font-size: 30px;
+    font-weight: bold;
+    color:black;
+}
+
+.stats img {
+    width: 50%;
+    margin: 20px;
+}
+
+.stats .linko {
+    width: 80%;
+    margin: 20px;
+}
+
+
+
+/* Animations */
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
