@@ -8,14 +8,14 @@
 }
 /* Utilities */
 .container {
-    max-width: 2000px;
+    max-width: 1200px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
 }
 
 .container.grid {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
