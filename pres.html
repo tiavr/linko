@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+// Add the new slick-theme.css if you want the default styling
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <body>
+        <!-- Navbar -->
+        <div class="navbar ">
+          <div class="container flex">
+            <div class="logo">
+              <a href="index.html"><img src="images/linko_bg_transp.png" alt=""
+              /></a>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pres.html">Présentation</a></li>
+                <li><a href="actu.html">Actualités</a></li>
+                <li><a href="devis.html">Faire un devis</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    
+        <!-- Présentation -->
+        <section class="showcase pimg2">
+          <div class="container grid">
+            <div class="showcase-text">
+              <h1>LINKO</h1>
+              <p>
+                Une équipe jeune et dynamique.
+              </p>
+            </div>
+        </section>
+
+        <!-- Presentation -->
+
+    <section class="video bg-primary py-2">
+        <div class="container">
+            <div class="text-center py-1">
+                <h2 class="lg">Comment fonctionne Linko ?</h2>
+                <img class ="feature-img" src="../images/thumbnail.jpg" alt="" />
+                <img src="images/play.png" alt="" class="play-btn" onclick="playVideo('images/video.mp4')">
+            </div>            
+        </div>
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src=images/video.mp4> 
+            </video>  
+            <img src="images/close.png" alt="" class="close-btn" onclick="stopVideo()">
+        </div>
+      </section>
+
+      <section class="bg-secondary p-5">
+          <div class="text-center">
+            <h2 class="lg py-2">Qui fait vivre l'association ?</h2>
+          </div>
+          <div class="main-carousel">
+            <div class="carousel-cell">
+              <img src="images/tiav.jpg" alt="">
+              <div class="text-center py-2"><h2>Tiav</h2></div>
+            </div>
+            <div class="carousel-cell">
+              <img src="images/tereza2.jpg" alt="">
+            </div>
+            <div class="carousel-cell"><img src="images/sonya.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="images/audrey.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="images/augustin.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="images/flavie.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="images/brune2.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="images/camille.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="images/thaddee.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="images/DSC08754.jpg" alt=""></div>
+            <div class="carousel-cell"><img src="images/pauline.jpg" alt=""></div>
+
+          </div>
+      </section>
+
+      <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+          <div>
+            <img src="../images/linko_bg_transp.png" alt="" />
+            <p>Copyright &copy; 2021</p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html"></a></li>
+              <li><a href="features.html"></a></li>
+              <li><a href="docs.html"></a></li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twutter fa-2x"></i></a>
+          </div>
+        </div>
+  
+        
+      </footer>
+<script>
+    var videoPlayer = document.getElementById("videoPlayer");
+    var myVideo = document.getElementById("myVideo");
+    function stopVideo(){
+      videoPlayer.style.display="none";
+    }
+    function playVideo(media){
+      myVideo.src = media;
+      videoPlayer.style.display="block";
+    }
+</script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.main-carousel').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    }
+    
+    );
+    $('.main-carousel').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  });
+</script>
+<!--<script type="text/javascript" >
+  $('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    wrapAround:true,
+    freeScroll: true,
+    contain: true
+  });
+</script>-->
+
+
+</body>
+</html>
