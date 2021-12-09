@@ -7,6 +7,8 @@
     <title>Présentation</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -15,7 +17,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-// Add the new slick-theme.css if you want the default styling
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -26,16 +27,16 @@
         <!-- Navbar -->
         <div class="navbar ">
           <div class="container flex">
-            <div class="logo">
+            <div class="logo" data-aos="fade-right">
               <a href="index.html"><img src="images/linko_bg_transp.png" alt=""
               /></a>
             </div>
-            <nav>
+            <nav data-aos="fade-in">
               <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="pres.html">Présentation</a></li>
                 <li><a href="actu.html">Actualités</a></li>
-                <li><a href="devis.html">Faire un devis</a></li>
+                <li><a href="form.html">Faire un devis</a></li>
               </ul>
             </nav>
           </div>
@@ -44,7 +45,7 @@
         <!-- Présentation -->
         <section class="showcase pimg2">
           <div class="container grid">
-            <div class="showcase-text">
+            <div class="showcase-text" data-aos="fade-right">
               <h1>LINKO</h1>
               <p>
                 Une équipe jeune et dynamique.
@@ -56,41 +57,91 @@
 
     <section class="video bg-primary py-2">
         <div class="container">
-            <div class="text-center py-1">
+            <div class="text-center py-1" data-aos="fade-in">
                 <h2 class="lg">Comment fonctionne Linko ?</h2>
-                <img class ="feature-img" src="../images/thumbnail.jpg" alt="" />
-                <img src="images/play.png" alt="" class="play-btn" onclick="playVideo('images/video.mp4')">
+                <video width="100%" controls>
+                  <source src=images/video.mp4> 
+                </video>
             </div>            
         </div>
-        <div class="video-player" id="videoPlayer">
-            <video width="100%" controls autoplay id="myVideo">
-                <source src=images/video.mp4> 
-            </video>  
-            <img src="images/close.png" alt="" class="close-btn" onclick="stopVideo()">
-        </div>
+
       </section>
 
-      <section class="bg-secondary p-5">
-          <div class="text-center">
+      <section class="bg-secondary p5">
+          <div class="text-center" data-aos="fade-right">
             <h2 class="lg py-2">Qui fait vivre l'association ?</h2>
           </div>
-          <div class="main-carousel">
+          <div class="main-carousel" data-aos="zoom-in">
             <div class="carousel-cell">
-              <img src="images/tiav.jpg" alt="">
-              <div class="text-center py-2"><h2>Tiav</h2></div>
+              <div class="imgBx"><img src="images/tereza2.jpg" alt=""></div>
+              <div class="text-center py-2 content">
+                <h2 class="md">Tereza SMELIKOVA</h2>
+                <p>Présidente</p>
+              </div>
             </div>
             <div class="carousel-cell">
-              <img src="images/tereza2.jpg" alt="">
+              <div class="imgBx"><img src="images/augustin.jpg" alt=""></div>
+              <div class="text-center py-2 content">
+                <h2 class="md">Augustin CHOULY</h2>
+                <p>Vice-Président</p>
+              </div>
             </div>
-            <div class="carousel-cell"><img src="images/sonya.jpg" alt=""></div>
-            <div class="carousel-cell"><img src="images/audrey.jpg" alt=""></div>
-            <div class="carousel-cell"><img src="images/augustin.jpg" alt=""></div>
-            <div class="carousel-cell"><img src="images/flavie.jpg" alt=""></div>
-            <div class="carousel-cell"><img src="images/brune2.jpg" alt=""></div>
-            <div class="carousel-cell"><img src="images/camille.jpg" alt=""></div>
-            <div class="carousel-cell"><img src="images/thaddee.jpg" alt=""></div>
-            <div class="carousel-cell"><img src="images/DSC08754.jpg" alt=""></div>
-            <div class="carousel-cell"><img src="images/pauline.jpg" alt=""></div>
+            <div class="carousel-cell">
+              <div class="imgBx"><img src="images/tiav.jpg" alt=""></div>
+              <div class="text-center py-2 content">
+                <h2 class="md">Tiav RANDRIANARIVELO</h2>
+                <p>Responsable SI</p>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="imgBx"><img src="images/brune2.jpg" alt=""></div>
+              <div class="text-center py-2 content">
+                <h2 class="md">Brune HENRY</h2>
+                <p>Responsable Projet</p>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="imgBx"><img src="images/audrey.jpg" alt=""></div>
+              <div class="text-center py-2 content">
+                <h2 class="md">Audrey PIALRD</h2>
+                <p>Responsable Event</p>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="imgBx"><img src="images/sonya.jpg" alt=""></div>
+              <div class="text-center py-2 content">
+                <h2 class="md">Sonya NDOMKEU</h2>
+                <p>Responsable Qualité</p>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="imgBx"><img src="images/flavie.jpg" alt=""></div>
+              <div class="text-center py-2 content">
+                <h1 class="md">Flavie MALEC</h1>
+                <p>Chargé de Qualité</p>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="imgBx"><img src="images/camille.jpg" alt=""></div>
+              <div class="text-center py-2 content">
+                <h2 class="md">Camille VIALLET</h2>
+                <p>Secrétaire</p>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="imgBx"><img src="images/thaddee.jpg" alt=""></div>
+              <div class="text-center py-2 content">
+                <h2 class="md">Thaddée BRICOUT</h2>
+                <p>Trésorerier</p>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="imgBx"><img src="images/DSC08754.jpg" alt=""></div>
+              <div class="text-center py-2 content">
+                <h2 class="md">Lucca SOLTNER</h2>
+                <p>Chargé d'Affaires</p>
+              </div>
+            </div>
 
           </div>
       </section>
@@ -101,34 +152,22 @@
             <img src="../images/linko_bg_transp.png" alt="" />
             <p>Copyright &copy; 2021</p>
           </div>
-          <nav>
-            <ul>
-              <li><a href="index.html"></a></li>
-              <li><a href="features.html"></a></li>
-              <li><a href="docs.html"></a></li>
-            </ul>
-          </nav>
-          <div class="social">
-            <a href="#"><i class="fab fa-github fa-2x"></i></a>
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="#"><i class="fab fa-twutter fa-2x"></i></a>
+          <div class="contact">
+            <h1 class="text-center">NOUS CONTACTER</h1>
+            <h3 class="text-center">Téléphone: 06 79 24 06 70</h3>
+            <h3 class="text-center">Email: Developpement-commercial@linkopg.onmicrosoft.com</h3>
           </div>
+          <div class="social">
+            <a href="https://www.linkedin.com/company/linko-polytech-grenoble/"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="https://www.facebook.com/linko.polytech/"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://www.instagram.com/linko_polytech_grenoble/"><i class="fab fa-instagram fa-3x"></i></a>
+          </div>
+            
+  
         </div>
   
         
       </footer>
-<script>
-    var videoPlayer = document.getElementById("videoPlayer");
-    var myVideo = document.getElementById("myVideo");
-    function stopVideo(){
-      videoPlayer.style.display="none";
-    }
-    function playVideo(media){
-      myVideo.src = media;
-      videoPlayer.style.display="block";
-    }
-</script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -139,6 +178,7 @@
       centerMode: true,
       centerPadding: '60px',
       slidesToShow: 3,
+      slidesToScroll: 3,
       responsive: [
         {
           breakpoint: 768,
@@ -146,7 +186,7 @@
             arrows: false,
             centerMode: true,
             centerPadding: '40px',
-            slidesToShow: 3
+            slidesToShow: 2
           }
         },
         {
@@ -162,24 +202,17 @@
     }
     
     );
-    $('.main-carousel').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-    });
+  
   });
 </script>
-<!--<script type="text/javascript" >
-  $('.main-carousel').flickity({
-    // options
-    cellAlign: 'left',
-    wrapAround:true,
-    freeScroll: true,
-    contain: true
-  });
-</script>-->
 
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
 </body>
 </html>
