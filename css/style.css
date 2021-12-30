@@ -183,7 +183,7 @@ img {
 }
 .form a {
     margin: 20px 0;
-    padding: 5px;
+    padding: 2px;
 }
 
 .form i:hover {
@@ -193,13 +193,19 @@ img {
 
 .form .grid {
     overflow: visible;
-    grid-template-columns: 45% 55%;
-    gap:  50px;
+    grid-template-columns: 40% 60%;
+    gap:  20px;
+    padding: auto;
+    margin: 0 auto;
+    justify-content: flex-end;
 }
 
-.form-control .grid {
+.form-control.grid {
     overflow: visible;
-    gap:  20px;
+    grid-template-columns: 50% 50%;
+    gap:  10px;
+    justify-content: flex-end;
+    position: relative;
 }
 
 .showcase {
@@ -458,8 +464,20 @@ img {
     .stats img {
         width: 25%;
     }
-    
 
+    .form {
+        height: 100%;
+        width: 100%;
+
+    }
+    
+    .showcase-form.card {
+        height: 100%;
+    }
+
+    .form .show {
+        text-align: center;
+    }
 
 /* Tablet  and under*/
 @media(max-width: 768px) {
@@ -530,6 +548,21 @@ img {
         height: 100%;
     }
 
+    
+    .form {
+        height: 100%;
+        width: 100%;
+
+    }
+    
+    .showcase-form.card {
+        height: 100%;
+    }
+
+    .form .show {
+        text-align: center;
+    }
+
 }
 
 
@@ -549,6 +582,21 @@ img {
     }
     .navbar ul {
         background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    
+    .form {
+        height: 100%;
+        width: 100%;
+
+    }
+    
+    .showcase-form.card {
+        height: 100%;
+    }
+
+    .form .show {
+        text-align: center;
     }
 
 }}

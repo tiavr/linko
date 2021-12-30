@@ -79,21 +79,21 @@
 }
 
 /* Text colors */
-.text-primary, .btn-primary {
+.text-primary{
 color: var(--primary-color);
 
 }
 
-.text-secondary, .btn-secondary {
+.text-secondary {
     color: var(--secondary-color);
 }
 
-.text-dark, .btn-dark {
+.text-dark {
     color: var(--dark-color);
 
 }
 
-.text-light, .btn-light {
+.text-light{
     color: var(--light-color);
 }
 /* Text sizes */
