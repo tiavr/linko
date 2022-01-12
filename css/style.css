@@ -24,9 +24,7 @@ body, html {
     color: #666;
 }
 
-section {
-    height: 100vh;
-}
+
 ul{
     list-style: none;
 }
@@ -173,7 +171,7 @@ img {
 }
 
 .showcase-form.card {
-    height: 80%;
+    height: fit-content;
     width: 100%;
     padding: 20px;
     margin: 0 auto;
@@ -388,6 +386,18 @@ textarea{
     border-radius: 15px;
 }
 
+#axel {
+    height: 600px;
+    object-fit: cover;
+}
+
+#nora {
+    height: 600px;
+}
+
+#angelo {
+    height: 600px;
+}
 
 /* Animations */
 
@@ -492,6 +502,10 @@ textarea{
         text-align: center;
     }
 
+    footer img {
+        width: 50%;
+    }
+
 /* Tablet  and under*/
 @media(max-width: 768px) {
     .grid,
@@ -575,6 +589,10 @@ textarea{
         height: 100%;
     }
 
+    footer img {
+        width: 50%;
+    }
+
 }
 
 
@@ -615,4 +633,7 @@ textarea{
         text-align: center;
     }
 
+    footer img {
+        width: 50%;
+    }
 }}
