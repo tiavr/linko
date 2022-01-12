@@ -54,7 +54,7 @@
 
       <section class="form">
         <div class="container grid">
-          <div class="show">
+          <div class="show" data-aos="fade-right">
             <img src="images/polytech.jpg" alt="">
             <div class="card">
               <p>N'hésitez pas à nous contacter pour toute demande de devis.</p>
@@ -66,7 +66,7 @@
               <a href="https://www.instagram.com/linko_polytech_grenoble/"><i class="fab fa-instagram fa-3x"></i></a>
             </div>
           </div>
-          <div class="showcase-form card">
+          <div class="showcase-form card" data-aos="zoom-in">
             <form action="">
               <div class="form-control container grid">
                 <input type="text" name="name" placeholder="Nom" required />
@@ -86,10 +86,11 @@
               <div class="form-control">
                 <input type="text" name="phone" placeholder="Votre numéro de téléphone" required />
               </div>
-              <div class="form-control" aria-invalid="false" cols="40" rows="10">
-                <textarea type="text" name="message" cols="75" rows="15" placeholder="Votre message"></textarea>
+              <div class="form-control" aria-invalid="false">
+                <textarea type="text" name="message" placeholder="Votre message"></textarea>
               </div>
               <input type="submit" value="Envoyer" class="btn btn-secondary "/>
+              <div id="status"></div>
             </form>
           </div>
         </div>

@@ -15,6 +15,7 @@
 }
 body, html {
     height: 100%;
+    width: 100%;
     margin: 0 auto;
     font-size: 16px;
     font-family: "Lato", "sans-serif";
@@ -23,7 +24,9 @@ body, html {
     color: #666;
 }
 
-
+section {
+    height: 100vh;
+}
 ul{
     list-style: none;
 }
@@ -148,13 +151,14 @@ img {
 }
 
 .form {
-    height: 800px;
+    width: 100%;
     background-color: var(--secondary-color);
     color: black;
     position: relative;
-    padding: 10px;
-    margin: 0;
+    display: flex;
+    margin: 0 auto;
 }
+
 
 .form h1 {
     font-size: 40px;
@@ -171,7 +175,7 @@ img {
 .showcase-form.card {
     height: 80%;
     width: 100%;
-    padding: auto;
+    padding: 20px;
     margin: 0 auto;
     position: inherit;
 }
@@ -233,25 +237,27 @@ img {
     gap: 30 px;
 }
 
-.showcase-form {
-    position: relative;
-    top: 60px;
-    height: 500px;
-    width: 400px;
-    padding: 40px;
-    z-index: 100;
-}
 
 .showcase-form .form-control {
     margin: 30px 0;
+    height: 100%;
 }
 
-.showcase-form input[type='text'], .showcase-form input[type='email']{
+.showcase-form input {
     border: 0;
     border-bottom: 1px solid #b4becb;
     width: 100%;
     padding: 3px;
     font-size: 16px;
+}
+
+
+textarea{
+    padding: 10px;
+    resize: vertical;
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
 }
 
 .showcase-form input:focus {
@@ -466,9 +472,16 @@ img {
     }
 
     .form {
-        height: 100%;
+        height: 100vh;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
 
+    .form img {
+        height: 50%;
+        width: 50%;
     }
     
     .showcase-form.card {
@@ -544,23 +557,22 @@ img {
         margin: 0px;
     }
 
-    .form {
-        height: 100%;
-    }
-
     
     .form {
         height: 100%;
         width: 100%;
 
     }
+
+    .form p 
+
+    .form img {
+        height: 25%;
+        width: 25%;
+    }
     
     .showcase-form.card {
         height: 100%;
-    }
-
-    .form .show {
-        text-align: center;
     }
 
 }
@@ -589,6 +601,10 @@ img {
         height: 100%;
         width: 100%;
 
+    }
+
+    .form img {
+        height: 100px;
     }
     
     .showcase-form.card {
