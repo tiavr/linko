@@ -338,17 +338,7 @@ textarea{
     transform: translateY(-25px);
 }
 
-.carousel-cell img {
-    width: 100%;
-    height: 100%;
-    top: -60px;
-    left: 20px;
-    object-fit: cover;
-    border-radius: 15px;
-    z-index: 1;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-    
-}
+
 .carousel-cell .imgBx {
     width: 100%;
     height: 100%;
@@ -386,18 +376,6 @@ textarea{
     border-radius: 15px;
 }
 
-#axel {
-    height: 600px;
-    object-fit: cover;
-}
-
-#nora {
-    height: 600px;
-}
-
-#angelo {
-    height: 600px;
-}
 
 /* Animations */
 
