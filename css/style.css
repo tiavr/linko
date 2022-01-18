@@ -148,6 +148,22 @@ img {
         Scroll = normal */
 }
 
+.blurbackground {
+    background: rgba(0,0,0,.8);
+    padding: 15px 15px 15px 40px;
+    border-radius: 15px;
+    
+  }
+  
+
+
+  .text-wraper {
+    z-index: 700;
+    position: relative;
+    color: #FFFFFF;
+    width: 100%;
+  }
+  
 .form {
     width: 100%;
     background-color: var(--secondary-color);
@@ -155,6 +171,7 @@ img {
     position: relative;
     display: flex;
     margin: 0 auto;
+    padding: 100px;
 }
 
 
