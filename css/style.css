@@ -279,7 +279,13 @@ textarea{
     outline: none;
 }
 
+#tereza {
+    border: 1rem solid;
+}
 
+#angelo {
+    border: 1rem solid;
+}
 /* Qui sommes nous */
 .cloud .grid {
     grid-template-columns: 4fr 3fr;
