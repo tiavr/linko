@@ -339,7 +339,7 @@ textarea{
 }
 
 
-
+/* Carousel */
 .carousel-cell {
     width:100%;
     height: 700px;
@@ -399,6 +399,21 @@ textarea{
     border-radius: 15px;
 }
 
+/* Page presta */
+
+.presta {
+
+    height: 90%;
+}
+
+.presta.card {
+
+    padding: 30px;
+    margin: 0 auto;
+}
+.logoPresta {
+
+}
 
 /* Animations */
 
