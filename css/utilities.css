@@ -7,6 +7,8 @@
     --error-color: #d9534f;
 }
 /* Utilities */
+
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -128,6 +130,8 @@ color: var(--primary-color);
     align-items: center;
     height: 100%;
 }
+
+
 
 .grid {
     display: grid;

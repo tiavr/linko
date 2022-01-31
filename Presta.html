@@ -37,10 +37,14 @@
             </div>
           </div>
 
-          <section class="presta bg-light">
-              <div class="container grid grid-4">
+          <section class="presta bg-light wrapper flex">
+            <div class="container">
+              <div class="text-center">
+                <h1>Nos domaines d'expertises</h1>
+              </div>
+              <div class="grid grid-4">
                 <div class="logoPresta card">
-                    <img src="images/1.jpg" alt="">
+                    <a href="#info"><img src="images/1.jpg" alt=""></a>
                 </div>
                 <div class="logoPresta card">
                     <img src="images/2.jpg" alt="">
@@ -52,6 +56,25 @@
                     <img src="images/4.jpg" alt="">
                 </div>
               </div>
+            </div>
+          </section>
+
+          <section class="prestaShow wrapper flex" id="info">
+            <div class="container info">
+              <div class="text-center">
+                <h2>Informatique</h2>
+              </div>
+              <div class="textePresta card">
+                Conception & développement d'applications web
+              </div>
+              <div class="textePresta card">
+                Création & amélioration de bases de données
+              </div>
+              <div class="textePresta card">
+                Déploiement d'infrastructures réseaux
+              </div>
+
+            </div>
           </section>
 
           <footer class="footer bg-dark py-5">
@@ -83,6 +106,7 @@
           </footer>
     
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="script.js"></script>
         <script>
           AOS.init({
             offset: 400,
