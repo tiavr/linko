@@ -75,6 +75,7 @@ img {
     width: 200px; /* width of container */
     height: 60px; /* height of container */
     object-fit: cover;
+    
 }
 .navbar {
     background-color: white;
@@ -410,12 +411,7 @@ textarea{
 .presta h1 {
     font-size: 50px;
     font-weight: bold;
-    padding: 30px;
-}
-
-.presta.card {
-    padding: 30px;
-    margin: 0 auto;
+    padding: 40px;
 }
 
 .logoPresta:hover {
@@ -425,7 +421,7 @@ textarea{
 
 .logoPresta.card {
     padding: 20px;
-    margin: 0 auto;
+
 }
 
 
@@ -440,12 +436,31 @@ textarea{
 
 .prestaShow h2 {
     font-weight: bold;
+    padding-bottom: 30px;
+    margin-top: 0 auto;
 }
 
 .wrapper {
     min-height: 100vh;
 }
 
+#scrollToTopBtn {
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+  }
+
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
 
 /* Animations */
 
@@ -497,6 +512,7 @@ textarea{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
+
 
     .showcase {
         height: auto;
