@@ -23,22 +23,20 @@
     
     </head>
 <body>
-    <div class="navbar ">
-        <div class="container flex">
-          <div class="logo" data-aos="fade-right">
-            <a href="index.html"><img src="images/linko_bg_transp.png" alt=""
-            /></a>
-          </div>
-          <nav data-aos="fade-in">
-            <ul>
-              <li><a href="index.html">Accueil</a></li>
-              <li><a href="pres.html">Présentation</a></li>
-              <li><a href="Presta.html">Nos Prestations</a></li>
-              <li><a href="form.html">Nous contacter</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <nav class="navbar" id="navbar">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a class="logo" href="index.html"><img src="images/linko_bg_transp.png" alt=""
+      /></a>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="pres.html">Présentation</a></li>
+      <li><a class="active" href="form.html">Nous contacter</a></li>
+    </ul>
+  </nav>
+
   
       <!-- Présentation -->
       <section class="showcase pimg3">
@@ -58,8 +56,8 @@
       <!-- Form -->
 
       <section class="form">
-        <div class="container grid" data-aos="zoom-in">
-            <div class="card">
+        <div class="container" data-aos="zoom-in">
+            <div class="card"id="carte">
               <p>N'hésitez pas à nous contacter pour toute demande de devis.</p>
               <h1>Contactez nous</h1>
               <p>Email : contact@linkopg.onmicrosoft.com</p>
@@ -70,10 +68,10 @@
             </div>
           </div>
           <div class="showcase-form card">
-            <form action="">
+            <form action="POST" data-netlify="true">
               <div class="form-control container grid">
                 <input type="text" name="name" placeholder="Nom" required />
-                <input type="text" name="name" placeholder="Prénom" required />
+                <input type="text" name="prenom" placeholder="Prénom" required />
               </div>
               <div class="form-control">
                 <input
@@ -92,7 +90,9 @@
               <div class="form-control" aria-invalid="false">
                 <textarea type="text" name="message" placeholder="Votre message"></textarea>
               </div>
-              <input type="submit" value="Envoyer" class="btn btn-secondary "/>
+              <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
               <div id="status"></div>
             </form>
           </div>
