@@ -267,8 +267,9 @@ ul li a.active, ul li a:hover{
     color: black;
     position: relative;
     display: flex;
-    margin: 0 auto;
-    padding: 100px;
+    margin: auto;
+    padding: 50px;
+
 }
 
 
@@ -284,10 +285,9 @@ ul li a.active, ul li a:hover{
 
 }
 
-.showcase-form.card {
+.showcase-form {
     height: fit-content;
     width: 100%;
-    padding: 20px;
     margin: 0 auto;
     position: inherit;
 }
@@ -363,6 +363,14 @@ ul li a.active, ul li a:hover{
     font-size: 16px;
 }
 
+/* Mobile */
+@media(max-width: 600px){
+
+    textarea{
+        height: 150px;
+    }
+    
+}
 
 textarea{
     padding: 10px;
@@ -376,13 +384,6 @@ textarea{
     outline: none;
 }
 
-#tereza {
-    border: 1rem solid;
-}
-
-#angelo {
-    border: 1rem solid;
-}
 /* Qui sommes nous */
 .cloud .grid {
     grid-template-columns: 4fr 3fr;
@@ -719,23 +720,13 @@ textarea{
         margin: 0px;
     }
 
-    
-    .form {
-        height: 100%;
-        width: 100%;
-
-    }
-
-    .form p 
 
     .form img {
         height: 25%;
         width: 25%;
     }
     
-    .showcase-form.card {
-        height: 100%;
-    }
+
 
     footer img {
         width: 50%;
