@@ -11,7 +11,6 @@
 .g-recaptcha div:first-child {
 
     margin: auto;
-    width: 100%;
     text-align: center;
 }
 
@@ -251,7 +250,7 @@ ul li a.active, ul li a:hover{
     background: rgba(0,0,0,.8);
     padding: 15px 15px 15px 40px;
     border-radius: 15px;
-    
+
   }
   
 
@@ -617,8 +616,7 @@ textarea{
     }
 
     .showcase-text {
-        text-align: center;
-        margin-top: 400px;
+        margin-top: 300px;
     }
 
 
@@ -689,8 +687,7 @@ textarea{
     }
 
     .showcase-text {
-        text-align: center;
-        margin-top: 400px;
+        margin-top: 250px;
     }
 
 
