@@ -8,6 +8,11 @@
     --light-color: #f4f4f4;
 }
 
+.field {
+    text-align: center;
+    padding: 10px;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
